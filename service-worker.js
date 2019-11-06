@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/titanite-react-redux/precache-manifest.8236f6bae9caa375731d0307ab394d4d.js"
+  "/titanite-react-redux/precache-manifest.b60d91858e814edbc8f7d0a98a30eb15.js"
 );
 
 self.addEventListener('message', (event) => {
