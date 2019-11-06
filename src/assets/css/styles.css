@@ -1,0 +1,746 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Lobster&display=swap');
+
+/*-------------
+ 	General
+-------------*/
+
+:root {
+	--primary-color: #277553;
+	--primary-shade-1: #3D6353;
+	--primary-shade-2: #3B403E;
+	--primary-tint-1: #69A78C;
+	--primary-tint-2: #BFDACF;
+	--hero-height: 320px;
+	--nav-height: 96px;
+	--logo-height: 96px;
+}
+
+@media (max-width: 720px) {
+	:root {
+		--nav-height: 155px;
+		--logo-height: 96px;
+	}
+}
+
+.serif, h1, h2, h3, h4 {
+	font-family: 'Lobster', cursive;
+
+}
+
+.sans-serif, p {
+	font-family: 'Indie Flower', sans-serif cursive;
+	/*font-family: 'Lato', sans-serif !important;*/
+	/*font-weight: lighter;*/
+}
+
+.w-100 {
+	width: 100%;
+}
+
+ul, nav {
+	list-style: none;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+
+	opacity: 0.9;
+}
+
+a:hover {
+	opacity: 1;
+}
+
+a.btn {
+	color: #fff;
+	border-radius: 4px;
+	text-transform: uppercase;
+	background-color: #2196F3;
+	font-weight: 800;
+	text-align: center;
+}
+
+hr {
+	width: 150px;
+	height: 2px;
+	background-color: #2196F3;
+	border: 0;
+	margin-bottom: 80px;
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 32px;
+}
+
+/*@media (max-width: 1000px){*/
+
+/*	section{*/
+/*		padding: 100px 50px;*/
+/*	}*/
+
+/*}*/
+
+/*@media (max-width: 600px){*/
+
+/*	section{*/
+/*		padding: 80px 30px;*/
+/*	}*/
+
+/*}*/
+
+section h3.title{
+	color: #414a4f;
+	text-transform: capitalize;
+	font: bold 32px 'Open Sans', sans-serif;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+section p{
+	max-width: 800px;
+	text-align: center;
+	margin-bottom: 35px;
+	padding: 0 20px;
+	line-height: 2;
+}
+
+ul.grid{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+/*-------------
+ 	Header
+-------------*/
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	background-color: var(--primary-shade-2);
+}
+
+header > .header-container {
+	display: flex;
+	width: 80%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+img#site-logo {
+	width: var(--logo-height);
+	height: var(--logo-height);
+}
+
+header nav{
+	display: flex;
+}
+
+header nav li{
+	margin: 0 15px;
+}
+
+header nav li:first-child{
+	margin-left: 0;
+}
+
+header nav li:last-child{
+	margin-right: 0;
+}
+
+
+
+@media (max-width: 1000px){
+	header{
+		padding: 20px 50px;
+	}
+}
+
+@media (max-width: 700px){
+	header{
+		padding: 20px 0;
+	}
+
+	header > div.header-container {
+		flex-direction: column;
+	}
+
+	header h2{
+		margin-bottom: 15px;
+	}
+}
+
+
+
+/*----------------
+ 	Hero Section
+----------------*/
+
+.hero {
+	position: relative;
+	height: var(--hero-height);
+	margin-top: var(--nav-height);
+	color: var(--primary-tint-2);
+	background-color: var(--primary-shade-1);
+}
+
+.hero h1  {
+	/*font: bold 72px 'Open Sans', sans-serif;*/
+	font-size: 89px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 15px;
+	padding: 0;
+	line-height: 0.9em;
+}
+
+.hero h1 .studios-text {
+	color: var(--primary-tint-1);
+}
+
+.hero-bar {
+	height: 64px;
+	background-color: #414a4f;
+}
+
+@media (max-width: 800px){
+
+	.hero {
+		min-height: 300px;
+	}
+
+	.hero h1 {
+		font-size: 48px;
+	}
+
+	.hero h3 {
+		font-size: 24px;
+	}
+
+	.hero h4 {
+		font-size: 16px;
+	}
+
+	.hero a.btn{
+		padding: 15px 40px;
+	}
+
+}
+
+
+
+/*--------------------
+ 	Our Work Section
+---------------------*/
+
+.оur-work{
+	background-color: #fff;
+}
+
+.our-work .grid li{
+	padding: 20px;
+	height: 350px;
+	border-radius: 3px;
+
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+	background-color: #333;
+}
+
+.our-work .grid li.small{
+	flex-basis: 40%;
+}
+
+.our-work .grid li.large{
+	flex-basis: 60%;
+}
+
+
+@media (max-width: 1000px){
+
+	.our-work .grid li.small,
+	.our-work .grid li.large{
+		flex-basis: 100%;
+	}
+
+}
+
+
+
+/*----------------------
+ 	Features Section
+----------------------*/
+
+.features{
+	/*background-color: #f5f5f5;*/
+}
+
+.features .grid {
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	margin: auto;
+	width: 90%;
+}
+
+.features .grid li{
+	padding: 0 16px;
+	flex-basis: 24%;
+	text-align: center;
+}
+
+.features .grid li i{
+    font-size: 50px;
+    color: #2196F3;
+    margin-bottom: 25px;
+}
+
+.features .grid li h4{
+	color: #555;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.features .grid li p{
+    margin: 0;
+}
+
+.features-link {
+	/*text-decoration: underline;*/
+}
+@media (max-width: 1000px){
+
+	.features .grid li{
+		flex-basis: 70%;
+		margin-bottom: 65px;
+	}
+
+	.features .grid li:last-child{
+		margin-bottom: 0;
+	}
+
+}
+
+
+@media (max-width: 600px){
+
+	.features .grid li{
+		flex-basis: 100%;
+	}
+
+}
+
+
+
+/*--------------------
+ 	Reviews Section
+--------------------*/
+
+.reviews{
+	background-color: #fff;
+}
+
+.reviews .quote{
+	text-align: center;
+	width: 80%;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.reviews .author{
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.reviews .author:last-child{
+    margin-bottom: 0;
+}
+
+@media (max-width: 1000px){
+
+	.reviews .quote{
+		font-size: 20px;
+	}
+
+	.reviews .author{
+	    font-size: 16px;
+	}
+
+}
+
+
+
+/*---------------------
+ 	Trading Baiscs Section
+---------------------*/
+.trading-basics {
+text-align: left;
+}
+
+/*---------------------
+ 	Contact Section
+---------------------*/
+
+.contact{
+	/*background-color: #f7f7f7;*/
+}
+
+.contact form{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	max-width: 800px;
+	width: 80%;
+}
+
+.contact form input{
+	padding: 15px;
+	flex: 1;
+	margin-right: 30px;
+	font-size: 18px;
+	color: #555;
+}
+
+.contact form .btn{
+	padding: 18px 42px;
+}
+
+
+@media (max-width: 800px){
+
+	.contact form input{
+		flex-basis: 100%;
+		margin: 0 0 20px 0;
+	}
+
+}
+
+
+
+
+/*-------------
+ 	Footer
+-------------*/
+
+footer {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	background-color: #414a4f;
+	padding: 60px 0;
+}
+
+footer ul{
+	display: flex;
+	margin-bottom: 25px;
+	font-size: 32px;
+}
+
+footer ul li{
+	margin: 0 8px;
+}
+
+footer ul li:first-child{
+	margin-left: 0;
+}
+
+footer ul li:last-child{
+	margin-right: 0;
+}
+
+footer p{
+	text-transform: uppercase;
+	font-size: 14px;
+	color: rgba(255,255,255,0.6);
+	margin-bottom: 10px;
+}
+
+footer p a{
+	color: #fff;
+}
+
+@media (max-width: 700px){
+
+	footer{
+		padding: 80px 15px;
+	}
+
+}
+
+
+/* -- Demo ads -- */
+
+@media (max-width: 1200px) {
+	#bsaHolder{ display:none;}
+}
+
+/* -- Color Theme -- */
+
+.color-primary-1 { color: #277553 }    /* Main Primary color */
+.color-primary-2 { color: #69A78C }
+.color-primary-3 { color: #3D6353 }
+.color-primary-4 { color: #3B403E }
+
+.color-bg-1 { background-color: #277553
+}
+.color-bg-2 { background-color: #69A78C
+}
+.color-bg-3 { background-color: #3D6353 }
+.color-bg-4 { background-color: #3B403E }
+
+.wrapper {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*font: normal 16px sans-serif;*/
+	color: #555;
+}
+
+.content-container {
+	display: flex;
+	align-items: center;
+	width: 90%
+}
+
+.title {
+	font-size: 40px;
+	text-decoration: underline;
+}
+
+.bg {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: var(--hero-height);
+	background-image:  url("../img/bg-tick.svg");
+	background-position-x: -200px;
+  background-position-y: -300px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hero-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	/*align-items: left;*/
+	flex-direction: column;
+	margin-left: 10%;
+	height: var(--hero-height);
+}
+
+.bg-gradient {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background-image: linear-gradient(rgba(39,117,83,0.5), rgba(59,64,62,0.5));
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	/*margin: 0 5%;*/
+	width: 100%;
+}
+
+#example1 {
+	background-image:  url("../img/bg-tick.svg"), linear-gradient(rgba(155,255,149,0.5), rgba(198,198,198,0.5)) ;
+	background-position: center;
+	background-repeat: no-repeat, repeat;
+	background-attachment: fixed;
+	z-index: 1000;
+	padding: 15px;
+	width: 80%;
+}
+
+/*card*/
+
+.cards {
+	margin: 16px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 80%;
+}
+
+.card {
+	/* Add shadows to create the "card" effect */
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.15);
+	width: 192px;
+	height: 192px;
+	border-radius: 50%;
+	border: 1px solid #277553;
+	transition: 0.3s;
+	color: white;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+
+/* Add some padding inside the card container */
+.card > .container {
+	padding: 2px 16px;
+}
+
+/*.flip-card {*/
+/*	!*position: absolute;*!*/
+/*	!*top: 50%;*!*/
+/*	!*left: 50%;*!*/
+/*	width: 300px;*/
+/*	height: 300px;*/
+/*	!*margin: -150px;*!*/
+/*	!*float: left;*!*/
+/*	!*perspective: 500px;*!*/
+/*}*/
+
+/*.flip-card-content {*/
+/*	!*position: absolute;*!*/
+/*	width: 100%;*/
+/*	height: 100%;*/
+/*	box-shadow: 0 0 15px rgba(0,0,0,0.1);*/
+
+/*	transition: transform 1s;*/
+/*	transform-style: preserve-3d;*/
+/*}*/
+
+/*.flip-card:hover .flip-card-content {*/
+/*	transform: rotateY( 180deg ) ;*/
+/*	transition: transform 0.5s;*/
+/*}*/
+
+/*.flip-card-front {*/
+/*	position: absolute;*/
+/*	height: 100%;*/
+/*	width: 100%;*/
+/*	background: white;*/
+/*	line-height: 300px;*/
+/*	color: #03446A;*/
+/*	text-align: center;*/
+/*	font-size: 60px;*/
+/*	border-radius: 5px;*/
+/*	backface-visibility: hidden;*/
+/*}*/
+
+/*.flip-card-back {*/
+/*	position: absolute;*/
+/*	height: 100%;*/
+/*	width: 100%;*/
+/*	background: #03446A;*/
+/*	line-height: 300px;*/
+/*	color: white;*/
+/*	text-align: center;*/
+/*	font-size: 13px;*/
+/*	border-radius: 5px;*/
+/*	!*backface-visibility: hidden;*!*/
+/*	transform: rotateY( 180deg );*/
+/*}*/
+
+
+.flip-card {
+	display: flex;
+	margin: 16px;
+	background-color: transparent;
+	border-radius: 5px;
+	flex-wrap: wrap;
+	flex: 1 0 30%;
+	/*width: 30%;*/
+	height: 360px;
+	border: 1px solid #f1f1f1;
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+	/*position: relative;*/
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	/*transition: transform 0.8s;*/
+	transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+	border-radius: 10px;
+	position: absolute;
+	z-index: -100;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+	position: absolute;
+	z-index: -100;
+	background-color: var(--primary-shade-1);
+	font-size: 60px;
+	color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+	position: relative;
+	right: 50%;
+	z-index: 100;
+	width: 200%;
+	background-color: var(--primary-shade-2);
+	font-size: 14px;
+	color: white;
+	transform: rotateY(180deg);
+}
+
+/*.flip-card-back {*/
+/*	background: #03446A;*/
+/*	color: white;*/
+/*	transform: rotateY( 180deg );*/
+/*	border-radius: 5px;*/
+/*}*/
+
+.intro-text {
+	margin-top: 32px;
+}
