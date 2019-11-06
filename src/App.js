@@ -3,7 +3,8 @@ import './App.css';
 import {simulateError, loadPostsRequest} from "./actions/actions"
 import {connect} from 'react-redux';
 import LoadingSpinner from "./components/LoadingSpinner";
-import { Router, Link, Route} from 'react-router-dom';
+// import { Router, Link, Route} from 'react-router-dom';
+import { HashRouter as Router, Link, Route} from 'react-router-dom';
 import history from "./navigation/history";
 import Home from "./screens/home";
 import Guides from "./screens/guides";

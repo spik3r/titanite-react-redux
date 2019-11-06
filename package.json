@@ -2,7 +2,7 @@
   "name": "titanite-react-redux",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://spik3r.github.io/titanite-react-redux",
+  "homepage": "https://spik3r.github.io/titanite-react-redux/#",
   "dependencies": {
     "axios": "^0.19.0",
     "gh-pages": "^2.1.1",
