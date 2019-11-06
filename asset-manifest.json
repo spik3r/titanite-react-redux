@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/titanite-react-redux/static/css/main.bd250669.chunk.css",
-    "main.js": "/titanite-react-redux/static/js/main.887852b0.chunk.js",
-    "main.js.map": "/titanite-react-redux/static/js/main.887852b0.chunk.js.map",
+    "main.js": "/titanite-react-redux/static/js/main.bcdfd05c.chunk.js",
+    "main.js.map": "/titanite-react-redux/static/js/main.bcdfd05c.chunk.js.map",
     "runtime-main.js": "/titanite-react-redux/static/js/runtime-main.a13f4230.js",
     "runtime-main.js.map": "/titanite-react-redux/static/js/runtime-main.a13f4230.js.map",
     "static/js/2.4639d626.chunk.js": "/titanite-react-redux/static/js/2.4639d626.chunk.js",
     "static/js/2.4639d626.chunk.js.map": "/titanite-react-redux/static/js/2.4639d626.chunk.js.map",
     "index.html": "/titanite-react-redux/index.html",
-    "precache-manifest.821af98df74eded86720913d9f5ad2c8.js": "/titanite-react-redux/precache-manifest.821af98df74eded86720913d9f5ad2c8.js",
+    "precache-manifest.cc26b526b1d2ff70e87bcb9ba361b7f0.js": "/titanite-react-redux/precache-manifest.cc26b526b1d2ff70e87bcb9ba361b7f0.js",
     "service-worker.js": "/titanite-react-redux/service-worker.js",
     "static/css/main.bd250669.chunk.css.map": "/titanite-react-redux/static/css/main.bd250669.chunk.css.map",
     "static/media/styles.css": "/titanite-react-redux/static/media/bg-tick.4be539dc.svg",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.a13f4230.js",
     "static/js/2.4639d626.chunk.js",
     "static/css/main.bd250669.chunk.css",
-    "static/js/main.887852b0.chunk.js"
+    "static/js/main.bcdfd05c.chunk.js"
   ]
 }
