@@ -33,7 +33,7 @@ class App extends React.Component {
         console.log('showError', showError);
         return (
             <div className="App">
-                <Router history={history}>
+                <Router basename="/" history={history}>
                     <Route exact={true} path="/" component={Home} />
                     <Route path="/indicators" component={Indicators} />
                     <Route path="/guides" component={Guides} />
