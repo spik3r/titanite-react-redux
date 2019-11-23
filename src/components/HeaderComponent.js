@@ -10,7 +10,7 @@ const HeaderComponent = () => {
                 <li><a href="#/guides">Guides</a></li>
                 <li><a href="#/support-us">Support Us</a></li>
                 <li><a href="#/contact">Contact us</a></li>
-                <li><a href="#/charts">Charts</a></li>
+                <li><a href="#/disclaimer">Disclaimer</a></li>
             </nav>
         </div>
     </header>;

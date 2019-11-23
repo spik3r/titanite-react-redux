@@ -12,6 +12,7 @@ import Indicators from "./screens/indicators";
 import Referrals from "./screens/referrals";
 import Contact from "./screens/contact";
 import Charts from "./screens/charts";
+import Disclaimer from "./screens/disclaimer";
 
 //Todo: maybe look at making this a functional component instead
 class App extends React.Component {
@@ -41,6 +42,7 @@ class App extends React.Component {
                     <Route path="/guides" component={Guides} />
                     <Route path="/support-us" component={Referrals} />
                     <Route path="/contact" component={Contact} />
+                    <Route path="/disclaimer" component={Disclaimer} />
                     <Route path="/charts" component={Charts} />
                     <Route path="/loading" component={LoadingSpinner} />
                 </Router>

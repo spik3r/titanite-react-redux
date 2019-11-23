@@ -36,8 +36,9 @@ class ChartComponent extends Component {
     }
     render() {
         return <div className=" wrapper bg-gradient">
-            <h2>Line Example</h2>
-            <Line ref="chart" data={data}/>
+            {/*<h2>Line Example</h2>*/}
+            {/*<Line ref="chart" data={data}/>*/}
+
         </div>;
     }
 };

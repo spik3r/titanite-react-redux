@@ -23,7 +23,7 @@
 }
 
 .serif, h1, h2, h3, h4 {
-	font-family: 'Lobster', cursive;
+	font-family: 'Typewriter', normal;
 
 }
 
@@ -743,4 +743,10 @@ footer p a{
 
 .intro-text {
 	margin-top: 32px;
+}
+
+
+.position-left {
+	align-items: flex-start;
+	text-align: left;
 }
